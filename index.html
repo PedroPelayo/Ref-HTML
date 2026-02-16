@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!--  HEADER -->
+      <header>
+        <div class="top-bar">
+            <!--<div class="logo">Conversor de Moneda</div>-->
+        </div>
+      </header>
+      <div class="card">
+        <h2>Conversor de Moneda</h2>
+        <input type="number" id="amount" placeholder="Cantidad en USD">
+        <select id="currency">
+            <option value="ARS">ARS (Peso Argentino)</option>
+            <option value="CLP">CLP (Peso Chileno)</option>
+            <option value="MXN">MXN (Peso Mexicano)</option>
+            <option value="EUR">EUR (Euro)</option>            
+        </select>
+        <button id="convert-btn">Convertir</button>
+        <p id="result">Resultado: $0</p>
+        <p id="presentation"></p>
+        <p id="last-update" style="font-size: 0.8rem;color: gray;"></p>
+
+        <h3>Historial de Conversiones</h3>
+        <ul id="history"></ul>
+      </div>
+    <script src="script.js"></script>    
+</body>
+</html>
